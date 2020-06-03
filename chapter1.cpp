@@ -37,6 +37,28 @@ int main(){
      Compiler Error
      */
     
+    //1.4 flow of control
+    
+    int sum = 0, val= 1;
+    //keep executing the while as long as val is less than or equal to 10
+    while(val<=10)
+    {
+        sum+= val;
+        ++val;
+    }
+    std:: cout<< "Sum of 1 to 10 inclusive is " << sum << std::endl;
+    
+    /* exercise 1.9 while loop to sum numbers from 50 to 100
+     
+     */
+    int sum_9 = 0, val_9 = 50;
+    while(val_9 <=100)
+    {
+        sum_9 += val_9;
+        ++val_9;
+    }
+    std::cout<<"Sum of 50 to 100 inclusive is " << sum_9 << std::endl;
+    
     return 0;
     
     
