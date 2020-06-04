@@ -92,6 +92,58 @@ int main(){
     std::cout <<"Sum of 1 to 10 inclusive is " << sum <<std::endl;
     */
     
+    /* exercise 1.13 rewrite 1.9 and 1.10 using for loop
+     1.
+     int sum= 0;
+     for(int val=50; val<=100; ++val)
+        sum+=val;
+     std::cout<< sum << std::endl;
+     
+     2.
+     for(int val=10;val<=0;--val)
+        std::cout << val << std::endl;
+     
+     */
+    
+    /* 1.4.3 reading an unknown number of inputs (control-d to indicate the end of file)
+    
+    int sum = 0, value = 0;
+    while(std::cin >> value)//read until end of file (input stream)
+        sum+=value;
+    std::cout << "sum is: " << sum << std::endl;
+     
+     */
+    
+    /* 1.16 write your own version of a program that prints the sum of a set of integers read from cin.
+     
+     int sum=0, value = 0;
+     std::cout << "Enter numbers and -1 indicates the end" << std::endl;
+     while(std::cin>>value && value != -1)
+        sum+=value;
+    std::cout << sum << std::endl;
+     */
+    
+    /*1.4.4 the if statement, demo
+    
+    int current = 0, val= 0;
+    if(std::cin >> current){
+        int cnt = 1;
+        while(std::cin >> val){
+            if(val == current)
+                ++cnt;
+            else{
+                std::cout << current << " occurs " << cnt <<" times"<< std::endl;
+                current = val;
+                cnt =1;
+            }
+        }
+        std::cout << current << " occurs " << cnt << " times" << std::endl;
+    }
+     */
+    
+    /* 1.5 Classes, a class defines a type along with a collection of operations that are related to that type.
+     see notes after the main function
+     */
     return 0;
 
 }
@@ -120,5 +172,12 @@ int main(){
     cout<<"Hello world\n";
  }
  
+ */
+
+
+/* Classes
+ use headers to access classes defined for our own applications.
+ Bookstore Demo, Sales_item class defines a type named Sales_item.
+ Sales_item item; //item is an object of type Sales_item.
  
  */
